@@ -1,10 +1,11 @@
-cat << 'EOF' > ~/Documents/staybot.py
 import discord
 from discord.ext import commands
 import yt_dlp
 import asyncio
+import os
 
-TOKEN = 'MTQ2NTc0MTY3NjYwODc1MzkyNg.GzGDfP.i7BM1HQcq9-ToyjDpZKE82EIYYtElPNiEhTGNQ'
+# This tells the bot to look at your Railway Variables for the secret code
+TOKEN = os.getenv('MTQ2NTc0MTY3NjYwODc1MzkyNg.Gqzegr.gr7ONnIAD_vTzbuEYDS5Tu8O2O6Hz9cTukXHKo')
 VOICE_CHANNEL_ID = 1490460191651659850
 
 intents = discord.Intents.default()
@@ -44,5 +45,3 @@ async def play(ctx, *, url):
     await ctx.send(f'🎶 Now playing: **{info["title"]}**')
 
 bot.run(TOKEN)
-EOF
-python3 ~/Documents/staybot.py
