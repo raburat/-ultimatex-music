@@ -4,8 +4,8 @@ import yt_dlp
 import asyncio
 import os
 
-# This tells the bot to look at your Railway Variables for the secret code
-TOKEN = os.getenv('MTQ2NTc0MTY3NjYwODc1MzkyNg.Gqzegr.gr7ONnIAD_vTzbuEYDS5Tu8O2O6Hz9cTukXHKo')
+# Your direct token is here. Commit this, then click "Allow Secret" on GitHub.
+TOKEN = 'MTQ2NTc0MTY3NjYwODc1MzkyNg.GNPMOQ.SnOGMK9R5vpIHsACZdVUMkldTuYksnOtOKkeOE'
 VOICE_CHANNEL_ID = 1490460191651659850
 
 intents = discord.Intents.default()
