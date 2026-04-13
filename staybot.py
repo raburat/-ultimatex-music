@@ -5,7 +5,7 @@ import asyncio
 import os
 
 # Your direct token is here. Commit this, then click "Allow Secret" on GitHub.
-TOKEN = 'MTQ2NTc0MTY3NjYwODc1MzkyNg.GNPMOQ.SnOGMK9R5vpIHsACZdVUMkldTuYksnOtOKkeOE'
+TOKEN = os.getenv('TOKEN')
 VOICE_CHANNEL_ID = 1490460191651659850
 
 intents = discord.Intents.default()
